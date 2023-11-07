@@ -1,0 +1,160 @@
+@charset "UTF-8";
+.grid-container {
+  display: grid;
+  grid-template-areas: "A A" "B C" "B D" "E E";
+}
+body{
+  background: #3b3c3d;
+}
+@media (max-width: 768px) {
+  header {
+    width: 100%;
+  }
+  .card{
+    width: 100%;
+  }
+  .menu-navegacion{
+    width: 30%;
+  }
+  .seccion-principal{
+    width: 70%;
+  }
+footer {
+  width: 30%;
+}
+}
+
+
+
+header {
+  grid-area: A;
+  background: #4f5052;
+  
+}
+
+h2 {
+  text-align: center;
+  color: black;
+}
+
+.menu-navegacion {
+  grid-area: B;
+  background: rgb(114, 117, 119);
+}
+.box{
+  color: rgb(8, 8, 8);
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.box {
+  text-align: center;
+}
+
+.grid-menu {
+  display: grid;
+}
+
+.filtro-de-navegacion {
+  grid-area: C;
+  background: rgb(114, 117, 119);
+}
+
+.seccion-principal {
+  grid-area: D;
+  width: 100%;
+  background: rgb(114, 117, 119);
+}
+
+footer {
+  grid-area: E;
+  background: rgb(114, 117, 119);
+}
+
+.Pie {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: auto  auto auto auto;
+  max-width: 800px; /* Ajusta el ancho máximo según tus necesidades */
+  margin: 0 auto;
+}
+
+.card {
+  flex: 1;
+  width: 90%; /* Ajusta el ancho de cada tarjeta con el margen */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px #888;
+  text-align: center;
+  padding: 5px;
+  margin: 10px 0;
+  background-color: #fff;
+}
+
+.card img {
+  max-width: 100%;
+  height: auto;
+}
+
+.card p {
+  margin: 10px 0;
+}
+
+.card button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.card button:hover {
+  background-color: #0056b3;
+}
+.box-redes{
+  font-size: 24px; 
+  margin: 5px; 
+  color: rgb(114, 117, 119); 
+}
+.box-pie{
+  color: rgb(15, 15, 15);
+}
+.galeria {
+    display: flex;
+    justify-content: center;
+}
+
+.imagen {
+    position: relative;
+    margin: 10px;
+}
+
+.imagen img {
+    width: 300px;
+    height: auto;
+    transition: transform 0.3s, filter 0.3s;
+}
+
+.imagen-bn {
+    filter: grayscale(100%);
+}
+
+.imagen:hover .imagen-color {
+    transform: scale(1.2);
+    filter: grayscale(0%);
+}
+
+.imagen:hover .imagen-bn {
+    transform: scale(1.2);
+    filter: grayscale(100%);
+}
+
+
